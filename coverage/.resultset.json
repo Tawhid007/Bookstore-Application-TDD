@@ -587,14 +587,16 @@
         null,
         null,
         1,
-        1,
+        2,
+        2,
+        2,
         null,
         null,
         1,
-        5,
-        5,
-        3,
-        3,
+        6,
+        6,
+        4,
+        4,
         null,
         2,
         2,
@@ -611,6 +613,8 @@
         null,
         2,
         2,
+        2,
+        2,
         null,
         null,
         null,
@@ -623,11 +627,11 @@
         1,
         null,
         1,
-        10,
+        11,
         null,
         null,
         1,
-        10,
+        11,
         null,
         null,
         null
@@ -846,6 +850,36 @@
         null,
         null
       ],
+      "/home/tawhid/RailsProjects/bookstore_app/spec/features/creating_book_feature_spec.rb": [
+        1,
+        null,
+        1,
+        2,
+        2,
+        2,
+        null,
+        1,
+        1,
+        null,
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        null,
+        1,
+        null,
+        null
+      ],
       "/home/tawhid/RailsProjects/bookstore_app/spec/helpers/authors_helper_spec.rb": [
         1,
         null,
@@ -917,7 +951,7 @@
         1,
         null,
         1,
-        1,
+        5,
         null,
         null
       ],
@@ -984,8 +1018,8 @@
       ],
       "/home/tawhid/RailsProjects/bookstore_app/spec/fabricators/author_fabricator.rb": [
         1,
-        11,
-        23,
+        13,
+        25,
         null
       ],
       "/home/tawhid/RailsProjects/bookstore_app/spec/fabricators/book_fabricator.rb": [
@@ -1012,6 +1046,6 @@
         null
       ]
     },
-    "timestamp": 1456463680
+    "timestamp": 1456477544
   }
 }

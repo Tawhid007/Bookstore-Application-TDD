@@ -1,21 +1,12 @@
-<%= bootstrap_form_for( @book, :html => {class: 'form-horizontal'}) do |f| %>
-    <div class="form-group">
-      <label class="control-label col-md-3" for="First name">First name</label>
-      <div class="col-md-9">
-        <%= f.text_field :first_name,class: 'form-control',hide_label: true %>
-      </div>
-    </div>
-
-    <div class="form-group">
-      <label class="control-label col-md-3" for="Last name">Last name</label>
-      <div class="col-md-9">
-        <%= f.text_field :last_name,class: 'form-control',hide_label: true %>
-      </div>
-    </div>
-
-    <div class="form-group actions control-group">
-      <div class="col-md-offset-3">
-        <%= f.submit class: 'btn btn-primary'%>
-      </div>
-    </div>
+<%= bootstrap_form_for( @book, layout: :horizontal, :html => {class: 'form-horizontal'}) do |f| %>
+    <%= f.text_field :title, placeholder: 'Title of the book', autofocus: true %>
+    <%= f.text_field :isbn, placeholder: 'Book ISBN' %>
+    <%= f.number_field :page_count, placeholder: 'Number Pages' %>
+    <%= f.number_field :price, placeholder: 'Book unit price' %>
+    <%= f.date_field :published_at, label: 'Published at'  %>
+    <%= f.text_area :description, placeholder: 'Book description' %>
+    <%= f.select :publisher_id, @publisher.map { |p| [p.name,p.id]},
+                    prompt: 'Select a publisher'%>
+    <%= f.collection_check_boxes :author_ids, @authors, :id, :full_name %>
+    <%= f.submit %>
 <% end %>
