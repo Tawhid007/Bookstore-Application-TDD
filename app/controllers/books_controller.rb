@@ -21,6 +21,8 @@ class BooksController < ApplicationController
       redirect_to @book
     else
       flash[:danger] = "Book has not been created"
+      @publisher = Publisher.all
+      @authors = Author.all
       render :new
     end
   end
@@ -34,7 +36,7 @@ class BooksController < ApplicationController
       redirect_to @book
     else
       flash[:danger] = "Book has not been updated"
-      @publishers = Publisher.all
+      @publisher = Publisher.all
       @authors = Author.all
       render :edit
     end
