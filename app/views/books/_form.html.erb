@@ -7,6 +7,7 @@
     <%= f.text_area :description, placeholder: 'Book description' %>
     <%= f.select :publisher_id, @publisher.map { |p| [p.name,p.id]},
                     prompt: 'Select a publisher'%>
+    <%= f.file_field :book_cover %>
     <%= f.collection_check_boxes :author_ids, @authors, :id, :full_name %>
     <%= f.submit %>
 <% end %>
