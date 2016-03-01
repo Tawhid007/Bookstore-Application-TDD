@@ -1,0 +1,7 @@
+<%= bootstrap_form_for( @user, layout: :horizontal, :html => {class: 'form-horizontal'}) do |f| %>
+    <%= f.text_field :first_name, placeholder: 'First Name', autofocus: true %>
+    <%= f.text_field :last_name, placeholder: 'Last Name' %>
+    <%= f.email_field :email, placeholder: 'Email' %>
+    <%= f.password_field :password_digest, placeholder: 'Password', label: 'Password' %>
+    <%= f.submit %>
+<% end %>
